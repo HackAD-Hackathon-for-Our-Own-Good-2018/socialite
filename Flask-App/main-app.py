@@ -18,7 +18,8 @@ def show_page():
 @app.route('/add-to-db', methods=['POST'])
 def addToDb():
 
-    print request.data
+    print request.form.to_dict()
+    print request.form['net_id']
 
     print "success"
     
@@ -29,6 +30,3 @@ def addToDb():
     # Construct return message based on success of insertion
 
     return "Success"
-
-
-
