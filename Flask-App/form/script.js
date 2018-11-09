@@ -5,7 +5,7 @@ var questions = [
 {question:"Preferred name?",type:"text"},
 {question:"Three things you like?",type:"text"},
 //separate by commas? 
-{question:"Enter the net ids of people you don't want to meet. (separate by commas)",type:"text"},
+{question:"Enter the net ids of people you don't want to meet.",type:"text"},
 {question:"Graduation class?"},
 {question:"Ways to contact you?"}
 ]
@@ -19,8 +19,14 @@ var rightArrow=document.getElementById("rightArrow");
 var nextButton = document.getElementById("nextButton");
 
 nextQuestion();
+
 function nextQuestion() {
 	//need a cleaner way to do this
+  if (position===0){
+  leftArrow.setAttribute('style','visibility:hidden');
+} else {
+  leftArrow.setAttribute('style','visibility:visible');
+}
 	if (position === 6) {
     field.setAttribute('style','display:none');
 		buttonFields.innerHTML='<input type="radio" id="firstYear" name="class" value="firstyear"><label for="firstYear">First Year</label><br><input type="radio" id="sophomore" name="class" value="sophomore"><label for="sophomore">Sophomore</label><br><input type="radio" id="junior" name="class" value="junior"><label for="junior">Junior</label><br><input type="radio" id="senior" name="class" value="senior"><label for="senior">Senior</label>'
