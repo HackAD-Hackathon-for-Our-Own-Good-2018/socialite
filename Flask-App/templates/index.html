@@ -15,26 +15,60 @@
 <h2>Want to meet new people but not sure how? Enter your net id and meet a new person every week.</h2>
 <div> -->
 <center>
-	<span id="nextButton">
-						<div id="leftArrow"><i style="font-size:5vw" class="fa fa-angle-left"></i></div>
-<div id="rightArrow"><i style="font-size:5vw" class="fa fa-angle-right"></i></div>
+	
 	<form action="/add-to-db" method="post">
-		<div id="boxInput">
-		<div id="containerInput">
-
-		<input id="field" required/>
+		<div id="netid">
+		<input id="field" type="text" required/>
 
 
-			<label id="label"></label>
-			<div id="buttonFields"></div>
-
-
+			<label id="label">Net Id</label>
 		</div>
-
-	</div>
+		<div id="netidconfirm">
+		<input id="field" type="text" required/>
+			<label id="label">Confirm Net ID</label>
+		</div>
+			<div id="fullname">
+		<input id="field" type="text" required/>
+			<label id="label">Full Name</label>
+		</div>
+<div id="preferredname">
+		<input id="field" type="text" required/>
+			<label id="label">Preferred Name</label>
+		</div>
+		<div id="threethings">
+		<input id="field" type="text" required/>
+			<label id="label">Three Things You Like?</label>
+		</div>
+		<div id="netidexceptions">
+		<input id="field" type="text" required/>
+			<label id="label">Net IDs you Wouldn't Want to Meet</label>
+		</div>
+		<div id="class">
+		<input id="firstyear" value="firstyear" type="radio"/>
+			<label for="firstyear" id="label">First Year</label>
+			<input id="sophomore" value="sophomore" type="radio"/>
+			<label for="sophomore" id="label">Sophomore</label>
+			<input id="junior" value="junior" type="radio"/>
+			<label for="junior" id="label">Junior</label>
+			<input id="senior" value="senior" type="radio"/>
+			<label for="senior" id="label">Senior</label>
+		</div>
+		<div id="contact">
+		<input id="facebook" value="facebook" type="checkbox"/>
+			<label for="facebook" id="label">Facebook</label>
+			<input id="instagram" value="instagram" type="checkbox"/>
+			<label for="instagram" id="label">Instagram</label>
+			<input id="whatsapp" value="whatsapp" type="radio"/>
+			<label for="whatsapp" id="label">Whatsapp</label>
+		
+		</div>
+	
+	
+	
+	
 <input type="submit" value="Submit">
 	</form>
-</span>
+
 </center>
 
 </body>
