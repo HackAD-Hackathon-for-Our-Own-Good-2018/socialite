@@ -1,0 +1,116 @@
+body {
+	background-color:#00BFFF;
+		font-family: 'Roboto', sans-serif;
+
+
+}
+
+.introText {
+
+	text-align:left;
+	color:white;
+margin-left:10%;
+margin-right:10%;
+	display:block;
+	
+
+
+}
+
+#containerInput input:invalid[type=text] + #label {
+	animation:shake 0.8s;
+}
+#containerInput input:valid[type=text] + #label {
+  top: -5%;
+  font-size: 1vw;
+  font-weight: 200;
+  color: #9e9e9e;
+}
+
+h1 {
+	font-size:4vw;
+	font-weight:500;
+}
+
+h2 {
+	font-size:3vw;
+	font-weight:200;
+}
+#containerInput {
+	width:100%;
+	height:100%;
+  text-align:left;
+}
+
+#boxInput {
+	background-color:white;
+	color:black;
+width:5s0%;
+	box-shadow: 0 16px 24px 2px rgba(0,0,0,0.14), 0 6px 30px 5px rgba(0,0,0,0.12), 0 8px 10px -5px rgba(0,0,0,0.3);
+  transition: transform .1s ease-in-out;
+padding:1%;
+  margin:20%;
+  border-radius:5px;
+
+}
+#label {
+
+
+width:100%;
+height:100%;
+  font-size: 2vw;
+  font-weight: 500;
+ 
+  transition: .2s ease-in-out;
+}
+
+#nextButton {
+
+  color: white;
+display: block;
+margin-left:20%;
+margin-right:20%;
+}
+#leftArrow{
+  float:left;
+  display:inline-block;
+  cursor:pointer;
+
+}
+#rightArrow {
+
+  float:right;
+  cursor:pointer;
+  display:inline-block;
+}
+
+
+#containerInput input[type=text]{
+	border:none;
+	outline: 0;
+  background: transparent;
+  box-shadow:none;
+  width:100%;
+  height:100%;
+  font-size:2vw;
+ 
+}
+
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
