@@ -37,7 +37,7 @@ function nextQuestion() {
 field.value='';
 	showQuestion();
 }
-
+leftArrow.addEventListener('click', prevQuestion);
 rightArrow.addEventListener('click', submit);
   // field.addEventListener('keyup', function(enter){
   //   // ie hack to redraw
@@ -46,7 +46,10 @@ rightArrow.addEventListener('click', submit);
   //   	submit();
   //   }
   // })
-
+function prevQuestion() {
+  position -=1;
+  hideQuestion(nextQuestion)
+}
   function submit() {
 
   	questions[position].value = field.value;
