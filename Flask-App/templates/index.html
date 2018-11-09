@@ -16,7 +16,7 @@
 <div> -->
 <center>
 	
-	<form action="/add-to-db" method="post">
+	<!-- <form action="/add-to-db" method="post">
 		<div id="netid">
 		<input id="field" type="text" required/>
 
@@ -68,7 +68,27 @@
 	
 <input type="submit" value="Submit">
 	</form>
+ -->
+ <span id="nextButton">
+						<div id="leftArrow"><i style="font-size:5vw" class="fa fa-angle-left"></i></div>
+<div id="rightArrow"><i style="font-size:5vw" class="fa fa-angle-right"></i></div>
+	<form action="/add-to-db" method="post" id="formId">
+		<div id="boxInput">
+		<div id="containerInput">
 
+		<input id="field" required/>
+
+
+			<label id="label"></label>
+			<div id="buttonFields"></div>
+
+
+		</div>
+
+	</div>
+<button id="submit">Submit</button>
+	</form>
+</span>
 </center>
 
 </body>
