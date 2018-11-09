@@ -1,6 +1,7 @@
 | user_data | CREATE TABLE `user_data` (
   `net_id` varchar(10) DEFAULT NULL,
-  `full_name` varchar(100) DEFAULT NULL,
+  `full_name` text DEFAULT NULL,
+  `pref_name` text DEFAULT NULL,
   `3_things` mediumtext DEFAULT NULL,
   `already_met` text DEFAULT NULL,
   `class_year` tinytext DEFAULT NULL,
