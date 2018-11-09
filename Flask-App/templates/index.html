@@ -3,7 +3,7 @@
 
 <head>
   <title>Another Octave</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}">
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -18,7 +18,7 @@
 	<span id="nextButton">
 						<div id="leftArrow"><i style="font-size:5vw" class="fa fa-angle-left"></i></div>
 <div id="rightArrow"><i style="font-size:5vw" class="fa fa-angle-right"></i></div>
-	<form action="/addtodb" method="post">
+	<form action="/add-to-db" method="post">
 		<div id="boxInput">
 		<div id="containerInput">
 
@@ -38,5 +38,5 @@
 </center>
 
 </body>
-<script src="script.js"></script>
+<script src="{{url_for('static', filename='script.js')}}"></script>
 </html>
