@@ -38,7 +38,8 @@ function nextQuestion() {
   } else if (position===7){
     buttonFields.innerHTML='<input name="check_fb" type="checkbox" id="facebook" value="facebook"><label class="buttonLabel" for="facebook">Facebook/Messenger</label><br><input type="checkbox" id="instagram" name="check_it" value="instagram"><label class="buttonLabel" for="instagram">Instagram</label><br><input type="checkbox" id="whatsapp" name="check_wa" value="whatsapp"><label class="buttonLabel" for="whatsapp">Whatsapp</label>'
     containerInput.appendChild(buttonFields);
-  } 
+  }
+  field.name = questions[position].name; 
   label.innerHTML = questions[position].question;
   field.type = questions[position].type;
   
