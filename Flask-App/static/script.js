@@ -5,7 +5,7 @@ var questions = [
 {question:"Preferred name?",type:"text"},
 {question:"Three things you like?",type:"text"},
 //separate by commas? 
-{question:"Enter the net ids of people you don't want to meet. (separate by commas)",type:"text"},
+{question:"Enter the net ids of people you don't want to meet.",type:"text"},
 {question:"Graduation class?"},
 {question:"Ways to contact you?"}
 ]
@@ -19,16 +19,22 @@ var rightArrow=document.getElementById("rightArrow");
 var nextButton = document.getElementById("nextButton");
 
 nextQuestion();
+
 function nextQuestion() {
 	//need a cleaner way to do this
+  if (position===0){
+  leftArrow.setAttribute('style','visibility:hidden');
+} else {
+  leftArrow.setAttribute('style','visibility:visible');
+}
 	if (position === 6) {
     field.setAttribute('style','display:none');
-		buttonFields.innerHTML='<input type="radio" id="firstYear" name="class" value="firstyear"><label for="firstYear">First Year</label><br><input type="radio" id="sophomore" name="class" value="sophomore"><label for="sophomore">Sophomore</label><br><input type="radio" id="junior" name="class" value="junior"><label for="junior">Junior</label><br><input type="radio" id="senior" name="class" value="senior"><label for="senior">Senior</label>'
+		buttonFields.innerHTML='<input type="radio" id="firstYear" name="class" value="firstyear"><label class="buttonLabel" for="firstYear">First Year</label><br><input type="radio" id="sophomore" name="class" value="sophomore"><label class="buttonLabel" for="sophomore">Sophomore</label><br><input type="radio" id="junior" name="class" value="junior"><label class="buttonLabel" for="junior">Junior</label><br><input type="radio" id="senior" name="class" value="senior"><label class="buttonLabel" for="senior">Senior</label>'
 		containerInput.appendChild(buttonFields);
 
                     
 	} else if (position===7){
-		buttonFields.innerHTML='<input type="checkbox" id="facebook" name="contact" value="facebook"><label for="facebook">Facebook/Messenger</label><br><input type="checkbox" id="instagram" name="contact" value="instagram"><label for="instagram">Instagram</label><br><input type="checkbox" id="whatsapp" name="contact" value="whatsapp"><label for="whatsapp">Whatsapp</label>'
+		buttonFields.innerHTML='<input type="checkbox" id="facebook" name="contact" value="facebook"><label class="buttonLabel" for="facebook">Facebook/Messenger</label><br><input type="checkbox" id="instagram" name="contact" value="instagram"><label class="buttonLabel" for="instagram">Instagram</label><br><input type="checkbox" id="whatsapp" name="contact" value="whatsapp"><label class="buttonLabel" for="whatsapp">Whatsapp</label>'
 		containerInput.appendChild(buttonFields);
 	} 
 	label.innerHTML = questions[position].question;
@@ -37,7 +43,7 @@ function nextQuestion() {
 field.value='';
 	showQuestion();
 }
-
+leftArrow.addEventListener('click', prevQuestion);
 rightArrow.addEventListener('click', submit);
   // field.addEventListener('keyup', function(enter){
   //   // ie hack to redraw
@@ -46,7 +52,10 @@ rightArrow.addEventListener('click', submit);
   //   	submit();
   //   }
   // })
-
+function prevQuestion() {
+  position -=1;
+  hideQuestion(nextQuestion)
+}
   function submit() {
 
   	questions[position].value = field.value;
