@@ -4,6 +4,13 @@ import dbconfig
 
 
 def addToDatabase(netid, fname, pname, things, alrmet, year, fb, ig, wa):
+
+    alrmet = alrmet.split(',')
+    for i in range(len(alrmet)):
+        alrmet[i] = alrmet[i].strip()
+    alrmet = ",".join(alrmet)
+    print(alrmet)
+
     try:
         connection = mysql.connector.connect(host = 'localhost', 
             database = 'socialite',
@@ -20,19 +27,12 @@ def addToDatabase(netid, fname, pname, things, alrmet, year, fb, ig, wa):
             `check_fb`, 
             `check_ig`, 
             `check_wa`)
-            VALUES ('{netid}', '{fname}', '{pname}', '{things}', '{alrmet}', '{year}', '{fb}', '{ig}', '{wa}')
-        '''.format(netid = netid, 
-        fname = fname,
-        pname = pname, 
-        things = things, 
-        alrmet = alrmet, 
-        year = year, 
-        fb = fb, 
-        ig = ig, 
-        wa = wa )
+            VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)
+        '''
+        params = [netid, fname, pname, things, alrmet, year, fb, ig, wa]
 
         cursor = connection.cursor()
-        result = cursor.execute(sql_query)
+        result = cursor.execute(sql_query, params)
         connection.commit()
         print("Inserted successfully")
 
@@ -40,5 +40,6 @@ def addToDatabase(netid, fname, pname, things, alrmet, year, fb, ig, wa):
         connection.rollback()
         print("Something went wrong in the insertion", error)
 
-addToDatabase("ns3774", "Navya Suri","Nav", "I love potatoes", "qw123, er234", "Sophomore", 1, 1, 1)
+    cursor.close()
 
+addToDatabase("sj2538", "Shantanu Jain", "Shanty", "I don't like potato", "abs123, qwe12", "Sophomore", 1, 1, 1)
