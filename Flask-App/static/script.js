@@ -29,6 +29,7 @@ function nextQuestion() {
 }
 	if (position === 6) {
     field.setAttribute('style','display:none');
+    field.required = false;
 		buttonFields.innerHTML='<input type="radio" id="firstYear" name="class" value="firstyear"><label class="buttonLabel" for="firstYear">First Year</label><br><input type="radio" id="sophomore" name="class" value="sophomore"><label class="buttonLabel" for="sophomore">Sophomore</label><br><input type="radio" id="junior" name="class" value="junior"><label class="buttonLabel" for="junior">Junior</label><br><input type="radio" id="senior" name="class" value="senior"><label class="buttonLabel" for="senior">Senior</label>'
 		containerInput.appendChild(buttonFields);
 
