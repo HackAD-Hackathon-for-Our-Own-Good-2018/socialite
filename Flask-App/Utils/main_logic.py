@@ -1,11 +1,11 @@
-import insert_db, get_from_db, update_db, sendemail
+import db_helpers, sendemail
 import random
 
 subject = 'ConnectNYUAD: Match for this Week'
 message = '''Typing the message here'''
 
 def get_match_pairs():
-    allUsers = get_from_db.getFromDatabase()
+    allUsers = db_helpers.getFromDatabase()
     all_ids = allUsers.keys()
 
     # Shuffle the list of all user ids
@@ -41,7 +41,7 @@ def get_match_pairs():
         p2_dont_match.append(person)
         p1_dont_match.append(second_person)
 
-        update_db.updateDatabase(person, p1_dont_match, second_person, p2_dont_match)
+        db_helpers.updateDatabase(person, p1_dont_match, second_person, p2_dont_match)
 
         # Fire Email function here
         # sendemail.send_email(person, second_person, subject, message)
