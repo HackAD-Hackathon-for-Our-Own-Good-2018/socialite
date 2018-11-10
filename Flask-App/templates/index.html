@@ -18,55 +18,115 @@
 	
 <form action="/add-to-db" method="post">
 		
-		<form action="/add-to-db" method="post">
-			<div id="netid">
-		<input id="field" name="net_id" type="text" required/>
-				<label id="label">Net ID</label>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-			<div id="netidconfirm">
-				<input id="field" type="text" required />
+		
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+	<!-- <div class="introText">
+<h1>Let's play another octave.</h1>
+<h2>Want to meet new people but not sure how? Enter your net id and meet a new person every week.</h2>
+<div> -->
+
+<!-- 	<div class="content">
+  <div class="content__container">
+     <p class="content__container__text">CONNECT   </p> 
+    
+    <ul class="content__container__list">
+      <li class="content__container__list__item">NYUAD !</li>
+      <li class="content__container__list__item">songs</li>
+      <li class="content__container__list__item">memories</li>
+      <li class="content__container__list__item">experiences</li>
+      <li class="content__container__list__item">stories</li>
+
+    </ul>
+  </div>
+</div> -->
+<div class="main">
+	<div class="container">
+	<center>
+<form action="/add-to-db" method="post">
+	<div class="row">
+	<div class="col-md-12">
+
+			<div class="inputContainer form-group" id="netid">
+	
+		<input class="form-control" id="field" name="net_id" type="text" required/>
+<label id="label">Net ID</label>
+				
+</div>
+</div>
+<div class="section col-md-12">
+			<div class="inputContainer form-group" id="netidconfirm">
+				<input class="form-control" id="field" type="text" name="net_id_confirm" required />
 				<label id="label">Confirm Net ID</label>
 			</div>
-			<div id="fullname">
-		<input id="field" type="text" name = "full_name" required/>
+		</div>
+		<div class="section col-md-12">
+			<div class="inputContainer form-group" id="fullname">
+		<input class="form-control" id="field" type="text" name = "full_name" required/>
 			<label id="label">Full Name</label>
 		</div>
-<div id="preferredname">
-		<input id="field" type="text" name = "pref_name" required/>
+	</div>
+	<div class="section col-md-12">
+<div class="inputContainer form-group" id="preferredname">
+		<input class="form-control" id="field" type="text" name = "pref_name" required/>
 			<label id="label">Preferred Name</label>
 		</div>
-		<div id="threethings">
-		<input id="field" type="text" name="3_things" required/>
+	</div>
+	<div class="section col-md-12">
+		<div class="inputContainer form-group" id="threethings">
+		<input class="form-control" id="field" type="text" name="3_things" required/>
 			<label id="label">Three Things You Like?</label>
 		</div>
-		<div id="netidexceptions">
-		<input id="field" type="text" name = "already_met" required/>
-			<label id="label">Net IDs you Wouldn't Want to Meet</label>
+	</div>
+	<div class="section col-md-12">
+		<div class="inputContainer form-group" id="netidexceptions">
+		<input class="form-control" id="field" type="text" name = "already_met" required/>
+			<label id="label">Net IDs of Those You Wouldn't Want to Meet?</label>
 		</div>
-		<div id="class">
+	</div>
+	<div class="section col-md-12">
+		<div class="inputContainer form-group radioGroup" id="class">
 		<input id="firstyear" value="firstyear" name="year" type="radio"/>
-			<label for="firstyear" id="label">First Year</label>
-			<input id="sophomore" value="sophomore" name="year" type="radio"/>
-			<label for="sophomore" id="label">Sophomore</label>
+			<label class="radioButton" for="firstyear" id="label">First Year</label>
+			<input  id="sophomore" value="sophomore" name="year" type="radio"/>
+			<label for="sophomore" class="radioButton" id="label">Sophomore</label>
 			<input id="junior" value="junior" name="year" type="radio"/>
-			<label for="junior" id="label">Junior</label>
+			<label for="junior" class="radioButton" id="label">Junior</label>
 			<input id="senior" value="senior" name="year" type="radio"/>
-			<label for="senior" id="label">Senior</label>
+			<label for="senior" class="radioButton" id="label">Senior</label>
+				<p>Class Year?</p>
 		</div>
-		<div id="contact">
+	
+	</div>
+	<div class="section col-md-12">
+		<div class="inputContainer form-group" id="contact">
 		<input id="facebook" value="facebook" name="check_fb" type="checkbox"/>
-			<label for="facebook" id="label">Facebook</label>
+			<label for="facebook" class="checkButton" id="label">Facebook</label>
 			<input id="instagram" value="instagram" name="check_ig" type="checkbox"/>
-			<label for="instagram" id="label">Instagram</label>
+			<label for="instagram" class="checkButton" id="label">Instagram</label>
 			<input id="whatsapp" value="whatsapp" name="check_wa" type="checkbox"/>
-			<label for="whatsapp" id="label">Whatsapp</label>
-		
+			<label for="whatsapp" class="checkButton" id="label">Whatsapp</label>
+			<p>Best Ways To Contact You?</p>
 		</div>
 	
+	</div>
+
 	
 	
 	
-<input type="submit" value="Submit">
+	<div class="section col-md-6">
+		<div class="inputContainer form-group">
+<button id="submitButton" type="submit" class="btn btn-default">Submit</button>
+</div>
+</div>
+</div>
+
 	</form>
 
  <!-- <span id="nextButton">
@@ -90,6 +150,8 @@
 	</form>
 </span> -->
 </center>
+</div>
+</div>
 
 </body>
 <script src="{{url_for('static', filename='script.js')}}"></script>
