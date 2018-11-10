@@ -32,13 +32,14 @@ def addToDatabase(netid, fname, pname, things, alrmet, year, fb, ig, wa):
         cur = connection.cursor()
         result = cur.execute(sql_query, params)
         connection.commit()
-        print("Inserted successfully")
+        output ="Inserted successfully"
 
     except (MySQLdb.Error, MySQLdb.Warning) as error:
         connection.rollback()
-        print("Something went wrong in the insertion", error)
+        output = "Something went wrong in the insertion" + str(error)
 
     connection.close()
+    return output
     
 
 

@@ -19,6 +19,7 @@ def show_page():
 def addToDb():
 
     print request.form.to_dict()
+    data = request.form.to_dict()
     # print request.form['net_id']
 
     netid = request.form['net_id']
@@ -29,20 +30,22 @@ def addToDb():
     year = request.form['year']
 
     ig = False
-    ig = True if 'check_ig' in request.form
+    if 'check_ig' in data.keys():
+        ig = True
     fb = False
-    fb = True if 'check_fb' in request.form
+    if 'check_fb' in data.keys():
+        fb = True
     wa = False
-    wa = True if 'check_wa' in request.form
+    if 'check_wa' in data.keys():
+        wa = True
 
 
 
     print "success"
+    print (netid, fname, pname, things, alrmet, year, fb, ig, wa)
     
     # Construct args here
 
-    # Use addToDatabase(netid, fname, pname, things, alrmet, year, fb, ig, wa)
+    return Utils.db_helpers.addToDatabase(netid, fname, pname, things, alrmet, year, fb, ig, wa)
 
     # Construct return message based on success of insertion
-
-    return "Success"
