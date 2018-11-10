@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 
@@ -7,7 +6,7 @@
 	<link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}">
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -39,7 +38,7 @@
 	<center>
 <form action="/add-to-db" method="post">
 	<div class="row">
-	<div class="col-md-12">
+	<div class="col-md-12 col-sm-4">
 
 			<div class="inputContainer form-group" id="netid">
 	
@@ -48,37 +47,37 @@
 				
 </div>
 </div>
-<div class="section col-md-12">
+<div class="section col-md-12 col-sm-4">
 			<div class="inputContainer form-group" id="netidconfirm">
+					<label id="label">Confirm Net ID</label>
 				<input class="form-control" id="field" type="text" name="net_id_confirm" required />
-				<label id="label">Confirm Net ID</label>
 			</div>
 		</div>
-		<div class="section col-md-12">
+		<div class="section col-md-12 col-sm-4">
 			<div class="inputContainer form-group" id="fullname">
 		<input class="form-control" id="field" type="text" name = "full_name" required/>
 			<label id="label">Full Name</label>
 		</div>
 	</div>
-	<div class="section col-md-12">
+	<div class="section col-md-12 col-sm-4">
 <div class="inputContainer form-group" id="preferredname">
 		<input class="form-control" id="field" type="text" name = "pref_name" required/>
 			<label id="label">Preferred Name</label>
 		</div>
 	</div>
-	<div class="section col-md-12">
+	<div class="section col-md-12 col-sm-4">
 		<div class="inputContainer form-group" id="threethings">
 		<input class="form-control" id="field" type="text" name="3_things" required/>
 			<label id="label">Three Things You Like?</label>
 		</div>
 	</div>
-	<div class="section col-md-12">
+	<div class="section col-md-12 col-sm-4">
 		<div class="inputContainer form-group" id="netidexceptions">
-		<input class="form-control" id="field" type="text" name = "already_met" required/>
+		<input class="form-control" id="field" type="text" name = "already_met"/>
 			<label id="label">Net IDs of Those You Wouldn't Want to Meet?</label>
 		</div>
 	</div>
-	<div class="section col-md-12">
+	<div class="section col-md-12 col-sm-4">
 		<div class="inputContainer form-group radioGroup" id="class">
 		<input id="firstyear" value="firstyear" name="year" type="radio"/>
 			<label class="radioButton" for="firstyear" id="label">First Year</label>
@@ -92,7 +91,7 @@
 		</div>
 	
 	</div>
-	<div class="section col-md-12">
+	<div class="section col-md-12 col-sm-4">
 		<div class="inputContainer form-group" id="contact">
 		<input id="facebook" value="facebook" name="check_fb" type="checkbox"/>
 			<label for="facebook" class="checkButton" id="label">Facebook</label>
@@ -108,7 +107,7 @@
 	
 	
 	
-	<div class="section col-md-6">
+	<div class="section col-md-6 col-sm-4">
 		<div class="inputContainer form-group">
 <button id="submitButton" type="submit" class="btn btn-default">Submit</button>
 </div>
@@ -140,6 +139,7 @@
 </center>
 </div>
 </div>
+<script src="script.js"></script>
 
 
 

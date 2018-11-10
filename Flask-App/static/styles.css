@@ -8,7 +8,7 @@ form {
   background:white;
   border-radius:5px;
   padding:3%;
-  width:70%;
+  width:90%;
   margin-top:10%;
   margin-bottom:10%;
   text-align:left;
@@ -17,14 +17,14 @@ form {
 
 .radioButton {
   vertical-align: top;
-  font-size:1.2vw;
+  font-size:2.2vw;
 }
 .checkButton {
-  font-size:1.2vw;
+  font-size:2.2vw;
 }
 #submitButton {
   margin-top:5%;
-  font-size:2vw;
+  font-size:3vw;
 }
 #submitButton:hover {
 background-color:#ffc30f;
@@ -32,7 +32,7 @@ color:white;
 }
 p {
 
-  font-size: 1.5vw;
+  font-size: 3vw;
   font-weight: 700;
  padding:0;
   transition: .2s ease-in-out;
@@ -58,12 +58,12 @@ label.checkButton{
 label{
 
 margin-bottom:4%;
-  font-size: 1.5vw;
+  font-size: 3vw;
   font-weight: 500;
  padding:0;
   transition: .2s ease-in-out;
 }
-#field:valid[type=text] + #label {
+#field:focus[type=text] + #label {
 
   font-size: 1vw;
   font-weight: 200;
@@ -75,7 +75,7 @@ padding:0;
   background: transparent;
   box-shadow:none;
   width:100%;
-  font-size:1.5vw;
+  font-size:3vw;
   padding:0;
  
 }
@@ -278,3 +278,4 @@ hr {
     transform: translate3d(4px, 0, 0);
   }
 }*/
+
