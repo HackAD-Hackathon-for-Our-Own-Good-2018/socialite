@@ -19,7 +19,7 @@ def show_page():
 def addToDb():
 
     print request.form.to_dict()
-    print request.form['net_id']
+    # print request.form['net_id']
 
     print "success"
     
