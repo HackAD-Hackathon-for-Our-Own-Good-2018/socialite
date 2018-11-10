@@ -41,16 +41,16 @@
 	<div class="col-md-12 col-sm-4">
 
 			<div class="inputContainer form-group" id="netid">
-	
+
 		<input class="form-control" id="field" name="net_id" type="text" required/>
-<label id="label">Net ID</label>
-				
+				<label id="label">Net ID</label>	
 </div>
 </div>
 <div class="section col-md-12 col-sm-4">
 			<div class="inputContainer form-group" id="netidconfirm">
-					<label id="label">Confirm Net ID</label>
 				<input class="form-control" id="field" type="text" name="net_id_confirm" required />
+				<label id="label">Confirm Net ID</label>
+
 			</div>
 		</div>
 		<div class="section col-md-12 col-sm-4">
@@ -72,9 +72,13 @@
 		</div>
 	</div>
 	<div class="section col-md-12 col-sm-4">
+		<div class="tooltip">
+  <span class="tooltiptext">Find the Net IDs using your Gmail!</span>
+</div>
 		<div class="inputContainer form-group" id="netidexceptions">
 		<input class="form-control" id="field" type="text" name = "already_met"/>
-			<label id="label">Net IDs of Those You Wouldn't Want to Meet?</label>
+			<label id="label">Net IDs of Those You Wouldn't Want to Meet? (ex: not wanting to match with a close friend, etc.)</label>
+		
 		</div>
 	</div>
 	<div class="section col-md-12 col-sm-4">
@@ -92,7 +96,7 @@
 	
 	</div>
 	<div class="section col-md-12 col-sm-4">
-		<div class="inputContainer form-group" id="contact">
+		<div class="inputContainer form-group checkGroup" id="contact">
 		<input id="facebook" value="facebook" name="check_fb" type="checkbox"/>
 			<label for="facebook" class="checkButton" id="label">Facebook</label>
 			<input id="instagram" value="instagram" name="check_ig" type="checkbox"/>
@@ -139,7 +143,6 @@
 </center>
 </div>
 </div>
-<script src="script.js"></script>
 
 
 
