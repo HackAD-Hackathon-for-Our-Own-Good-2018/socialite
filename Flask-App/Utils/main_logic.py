@@ -10,14 +10,15 @@ You have been matched for this week!
 
 In the upcoming week, you have the opportunity to reach out and get to know each other. You can reach out to each other via email (just reply to this thread){platforms}. Don't be afraid to start the conversation - your match is just as willing to meet new people as you are! 
 
-Every person has three things that they want others to know These might turn out to be good conversation starters to move past the generic questions. The three things you want each other to know are:
+Every person has some things that they want others to know. These might turn out to be good conversation starters to move past the generic questions. The things you want each other to know are:
 {pname1} - {things1}
 {pname2} - {things2}
 
-Be creative! - Ask people their hobbies and passions, or tell them yours. You are bound to have something in common! Be nice and open-minded. Kindness and mutual respect are not only the cornerstones of the NYUAD spirit, but also of any good friendship. 
+Be creative! Ask people their hobbies and passions, or tell them yours. You are bound to have something in common! Be nice and open-minded. Kindness and mutual respect are not only the cornerstones of the NYUAD spirit, but also of any good friendship. 
+
 Good luck!
 
-Warm Regards
+Warm regards,
 ConnectNYUAD team
 
 (THIS IS A TEST! Thanks for bearing with us. -The Gabrus)
@@ -30,12 +31,13 @@ You have been matched for this week!
 
 In the upcoming week, you have the opportunity to reach out and get to know each other. You can either do this individually or meet as a group. You can reach out to each other via email (reply to this thread){platforms}. Don't be afraid to start the conversation - your match is just as willing to meet new people as you are! 
 
-Every person has three things that they want others to know. These might turn out to be good conversation starters to move past the generic questions. The three things you want each other to know are:
+Every person has some things that they want others to know. These might turn out to be good conversation starters to move past the generic questions. The things you want each other to know are:
 {pname1} - {things1}
 {pname2} - {things2}
 {pname3} - {things3}
 
-Be creative! - Ask people their hobbies and passions, or tell them yours. You are bound to have something in common! Be nice and openminded! Kindness and mutual respect are not only the cornerstones of the NYUAD spirit, but also of any good friendship. 
+Be creative! Ask people their hobbies and passions, or tell them yours. You are bound to have something in common! Be nice and openminded! Kindness and mutual respect are not only the cornerstones of the NYUAD spirit, but also of any good friendship. 
+
 Good luck!
 
 Warm regards,
