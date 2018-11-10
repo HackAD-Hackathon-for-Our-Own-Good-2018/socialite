@@ -79,11 +79,10 @@ def getFromDatabase():
 
 
 
-def updateDatabase(n1, n1_dont_match, n2, n2_dont_match):
+def updateDatabase(n1, n1_dont_match):
     
     try:
         p1_dont_match = ",".join(n1_dont_match)
-        p2_dont_match = ",".join(n2_dont_match)
 
         print n1, p1_dont_match
         query = "update user_data set already_met = %s where net_id = %s ;"
@@ -95,7 +94,6 @@ def updateDatabase(n1, n1_dont_match, n2, n2_dont_match):
 
         cur = connection.cursor()
         cur.execute(query,[p1_dont_match, n1])
-        cur.execute(query,[p2_dont_match, n2])
 
         print("Update complete")
 
