@@ -17,16 +17,12 @@
 <center>
 	
 <form action="/add-to-db" method="post">
-		<div id="netid">
-		<input id="field" name="net_id" type="text" required/>
-
+		
 		<form action="/add-to-db" method="post">
 			<div id="netid">
-				<input id="field" type="text" name="f1" required />
+		<input id="field" name="net_id" type="text" required/>
+				<label id="label">Net ID</label>
 
-
-				<label id="label">Net Id</label>
-			</div>
 			<div id="netidconfirm">
 				<input id="field" type="text" required />
 				<label id="label">Confirm Net ID</label>
@@ -48,21 +44,21 @@
 			<label id="label">Net IDs you Wouldn't Want to Meet</label>
 		</div>
 		<div id="class">
-		<input id="firstyear" value="firstyear" name="first_year" type="radio"/>
+		<input id="firstyear" value="firstyear" name="year" type="radio"/>
 			<label for="firstyear" id="label">First Year</label>
-			<input id="sophomore" value="sophomore" name="second_year" type="radio"/>
+			<input id="sophomore" value="sophomore" name="year" type="radio"/>
 			<label for="sophomore" id="label">Sophomore</label>
-			<input id="junior" value="junior" name="junior" type="radio"/>
+			<input id="junior" value="junior" name="year" type="radio"/>
 			<label for="junior" id="label">Junior</label>
-			<input id="senior" value="senior" name="senior" type="radio"/>
+			<input id="senior" value="senior" name="year" type="radio"/>
 			<label for="senior" id="label">Senior</label>
 		</div>
 		<div id="contact">
 		<input id="facebook" value="facebook" name="check_fb" type="checkbox"/>
 			<label for="facebook" id="label">Facebook</label>
-			<input id="instagram" value="instagram" name="check_it" type="checkbox"/>
+			<input id="instagram" value="instagram" name="check_ig" type="checkbox"/>
 			<label for="instagram" id="label">Instagram</label>
-			<input id="whatsapp" value="whatsapp" name="check_wa" type="radio"/>
+			<input id="whatsapp" value="whatsapp" name="check_wa" type="checkbox"/>
 			<label for="whatsapp" id="label">Whatsapp</label>
 		
 		</div>
