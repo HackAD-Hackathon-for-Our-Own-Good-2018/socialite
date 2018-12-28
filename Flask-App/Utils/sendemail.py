@@ -6,7 +6,11 @@ def send_email(users, subject, msg):
 		users[i] = users[i]+"@nyu.edu"
 
 	try:
-		message = '''Subject: {sub}\nFrom: {fro}\nTo: {users}\n{msg}'''.format(sub = subject, fro = emailconfig.EmailAddress, users = ", ".join(users), msg = msg)
+		message = '''Subject: {sub}\nFrom: {fro}\nTo: {users}\n{msg}'''.format(
+			sub = subject, 
+			fro = emailconfig.EmailAddress, 
+			users = ", ".join(users), 
+			msg = msg)
 		server = smtplib.SMTP('smtp.gmail.com',587)
 		server.ehlo()
 		server.starttls()

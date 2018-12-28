@@ -6,7 +6,7 @@ def addToDatabase(netid, fname, pname, things, alrmet, year, fb, ig, wa):
     alrmet = alrmet.split(',')
     for i in range(len(alrmet)):
         alrmet[i] = alrmet[i].strip()
-    alrmet = ",".join(alrmet)
+    alrmet = netid+","+",".join(alrmet)
     print(alrmet)
 
     try:
@@ -85,7 +85,7 @@ def updateDatabase(n1, n1_dont_match):
     try:
         p1_dont_match = ",".join(n1_dont_match)
 
-        print n1, p1_dont_match
+        # print n1, p1_dont_match
         query = "update user_data set already_met = %s where net_id = %s ;"
 
         connection = MySQLdb.connect(host='localhost',
