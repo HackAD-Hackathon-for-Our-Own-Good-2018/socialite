@@ -11,3 +11,4 @@ import db_helpers
 print("testing add")
 
 db_helpers.addToDatabase("ns3774", "Navya Suri", "nav", "lol", "aas1066", "Sophomore", 1, 1, 1)
+

@@ -1,5 +1,4 @@
 import smtplib
-from email.mime.text import MIMEText as text
 import emailconfig
 def send_email(users, subject, msg):
 	for i in range(len(users)):
